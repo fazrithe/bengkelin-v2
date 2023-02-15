@@ -57,7 +57,7 @@ const SingleProduct: NextPage<Props> = (props) => {
             </Stack>  
             <Grid container spacing={1} className="mt-4">
               <Grid item xs={12} sm={4}>
-                  {/* <GalleryProduct/> */}
+                  <GalleryProduct/>
               </Grid>
               <Grid item xs={12} sm={5}>
                   <Detail/>
