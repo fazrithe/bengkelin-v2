@@ -1,11 +1,10 @@
 import SingleProduct from "../../components/product/SingleProduct";
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react';
 
 export default function Single(){
     const router = useRouter()
-    const { pid } = router.query
-    const name = pid
+    const { id } = router.query
+    const name = id
     return (
         <div>
             <SingleProduct product={name}/>
