@@ -3,6 +3,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { Button, Grid, TextField } from '@mui/material';
+import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import PulsaService from '@/components/home/service/PulsaSrvice';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -22,9 +25,9 @@ function TabPanel(props: TabPanelProps) {
         {...other}
       >
         {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
+        <>  
+              {children}
+        </>
         )}
       </div>
     );
@@ -55,7 +58,7 @@ export default function TabService(){
                     <Tab label="Listrik PLN" {...a11yProps(2)} />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                    Pulsa
+                  <PulsaService />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     Paket Data
