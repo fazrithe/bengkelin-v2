@@ -18,13 +18,6 @@ export default function Login(){
         <Link key="1" color="inherit" href="/">
           Home
         </Link>,
-        <Link
-          key="2"
-          color="inherit"
-          href="/material-ui/getting-started/installation/"
-        >
-          Aksesoris
-        </Link>,
         <Typography key="3" color="text.primary">
           Login
         </Typography>,
