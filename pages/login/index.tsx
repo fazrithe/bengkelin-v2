@@ -5,6 +5,12 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { Formik, Field, Form, FormikHelpers } from 'formik';
+
+interface Values {
+    email: string;
+    password: string;
+}
 
 export default function Login(){
     const [showPassword, setShowPassword] = React.useState(false);
@@ -23,7 +29,23 @@ export default function Login(){
         </Typography>,
       ];
     return(
-            <Container fixed>
+        <Formik
+                initialValues={{
+                    email: '',
+                    password: '',
+                }}
+
+                onSubmit={(
+                    values: Values,
+                    { setSubmitting }: FormikHelpers<Values>
+                ) => {
+                    setTimeout(() => {
+                        alert(JSON.stringify(values, null, 2));
+                        setSubmitting(false);
+                    }, 500);
+                }}
+            >
+        <Container fixed>
             <Stack spacing={2} className="mt-2">
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}
@@ -35,7 +57,7 @@ export default function Login(){
         <Grid container alignItems="center" className="mt-4 d-flex justify-content-center">
         <Paper elevation={0}>
             <Grid container alignItems="center" className="mt-4">
-                <Grid xs={9} sm={9}>
+                <Grid item xs={9} sm={9}>
                     <Typography variant="h6">Masuk</Typography>
                 </Grid>
                 <Grid item xs={2} sm={2}>
@@ -44,6 +66,7 @@ export default function Login(){
                     </Link>
                 </Grid>
             </Grid>
+            <Form>
             <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
                 <InputLabel color="secondary">Email</InputLabel>
@@ -51,6 +74,8 @@ export default function Login(){
                     type="text"
                     label="Email"
                     color="secondary"
+                    name="email"
+                    id="email"
                 />
                 </FormControl>
             </FormGroup>
@@ -58,7 +83,8 @@ export default function Login(){
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
                 <InputLabel htmlFor="outlined-adornment-password" color="secondary">Password</InputLabel>
                 <OutlinedInput
-                    id="outlined-adornment-password"
+                    id="password"
+                    name="password"
                     type={showPassword ? 'text' : 'password'}
                     color="secondary"
                     endAdornment={
@@ -79,11 +105,13 @@ export default function Login(){
             </FormGroup>
               <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                    <Button variant="contained" color="secondary">Login</Button>
+                    <button type="submit" className="btn btn-primary">Masuk</button>
                 </FormControl>
             </FormGroup>
+            </Form>
             </Paper>
             </Grid>
             </Container>
+            </Formik>
     )
 }

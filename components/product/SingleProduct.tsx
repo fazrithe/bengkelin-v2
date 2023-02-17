@@ -74,10 +74,10 @@ const SingleProduct: NextPage<Props> = (props) => {
               </Grid>
             </Grid>
             <Grid container className="mt-2">
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={3}>
                   <BuyserReview />
               </Grid>
-              <Grid item xs={12} sm={5}>
+              <Grid item xs={12} sm={6}>
                  <SelectionReview/>
               </Grid>
             </Grid>

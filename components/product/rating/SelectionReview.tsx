@@ -11,7 +11,7 @@ export default function SelectionReview(){
     return(
         <>
         <Grid container>
-            <Grid item  xs={12} sm={8} className="mt-3">
+            <Grid item  xs={12} sm={8} paddingTop={3}>
             <Typography fontWeight="bold">ULASAN PILIHAN</Typography>
             </Grid>
             <Grid item  xs={12} sm={3}>
