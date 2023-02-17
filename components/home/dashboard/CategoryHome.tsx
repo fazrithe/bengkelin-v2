@@ -13,7 +13,6 @@ export default function CategoryHome(){
       <h4>Kategori Pilihan</h4>
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            
           <Link href="/cat/[name]" as={`/cat/aksesoris`}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -33,6 +32,7 @@ export default function CategoryHome(){
             </Link>
           </Grid>
           <Grid item xs={4}>
+            <Link href="/cat/[name]" as={`/cat/sparepart`}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
@@ -43,13 +43,15 @@ export default function CategoryHome(){
                 />
                 <CardContent>
                   <Typography fontSize="14" fontWeight="lg">
-                    Spartpart
+                    Sparepart
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+            </Link>
           </Grid>
           <Grid item xs={4}>
+            <Link href="/cat/[name]" as={`/cat/bengkel`}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
@@ -65,6 +67,7 @@ export default function CategoryHome(){
                 </CardContent>
               </CardActionArea>
             </Card>
+            </Link>
           </Grid>
         </Grid>
   </Grid>

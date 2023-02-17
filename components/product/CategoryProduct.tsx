@@ -13,6 +13,8 @@ import { Breadcrumbs,
    } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Filter from './category/Filter';
+import CatProduct from './category/CatProduct';
 
 function handleClick(event: React.SyntheticEvent) {
     event.preventDefault();
@@ -48,15 +50,15 @@ const CategoryProduct: NextPage<Props> = (props) => {
                 </Breadcrumbs>
             </Stack>
             <Grid container className="mt-4">
-                <Grid item xs={8} sm={2}>
-                    Test
+                <Grid item xs={12} sm={2.5}>
+                    <Filter/>
                 </Grid>
-                <Grid item xs={12} sm={10}>
+                <Grid item xs={12} sm={9.5}>
                     <Grid container>
-                        <Grid item xs={12} sm={8} className="mt-3">
+                        <Grid item xs={12} sm={8} className="mt-3 ml-2">
                             <Typography>Menampilkan 2394316 produk untuk {cateogry} (1 - 60 of 2394316)</Typography>
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} sm={3.5}>
                             <Grid container>
                                 <Grid>
                                 <FormControl sx={{ m: 1, minWidth: 150 }} size="small">
@@ -79,6 +81,9 @@ const CategoryProduct: NextPage<Props> = (props) => {
                                 </Grid>
                             </Grid>
                         </Grid>
+                    </Grid>
+                    <Grid container spacing={1} className="mt-2 ml-2">
+                        <CatProduct />
                     </Grid>
                 </Grid>
             </Grid>
