@@ -1,11 +1,12 @@
-import { Card, Grid, Button, Typography, CardContent, FormGroup, FormControl, InputLabel, OutlinedInput, TextField } from "@mui/material";
-import {FavoriteBorder, Chat, Share} from '@mui/icons-material'
+import { Card, Paper, Grid, Button, Typography, CardContent, FormGroup, FormControl, InputLabel, OutlinedInput, TextField } from "@mui/material";
+import {FavoriteBorder, Chat, Share, Palette} from '@mui/icons-material'
 
 export default function BuyProduct(){
     return(
         <>
             <Card sx={{ minWidth: 275, position: "fixed" }}>
-                <CardContent>
+                <CardContent>    
+                <Paper elevation={0}><Typography variant="h6" fontWeight="bold" color="secondary">Brand Pilihan</Typography></Paper>
                     <Typography fontWeight="bold">Atur jumlah & catatan</Typography>
                     <Grid container>
                         <Grid item>
@@ -25,7 +26,15 @@ export default function BuyProduct(){
                         </Grid>
                     </Grid>
                     <TextField id="standard-basic" label="Catatan" color="secondary" variant="standard" />
-                    <Grid container className="mt-4" spacing={2}>
+                    <Grid container paddingTop={2}>
+                        <Grid item xs={4} sm="auto">
+                            <Typography>Subtotal</Typography>
+                        </Grid>
+                        <Grid item xs={4} sm="auto" paddingLeft={2}>
+                            <Typography variant="h5" fontWeight="bold">Rp. 70.000</Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container paddingTop={1} spacing={2}>
                         <Grid item>
                             <Button variant="contained" color="secondary">+ Keranjang</Button>
                         </Grid>

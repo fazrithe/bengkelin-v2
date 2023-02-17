@@ -14,6 +14,7 @@ import BuyProductMobile from './items/BuyProductMobile';
 import GalleryProduct from './items/GalleryProduct'
 import { NextPage } from 'next';
 import SelectionReview from './rating/SelectionReview';
+import BuyserReview from './rating/BuyerReview';
 
 function handleClick(event: React.SyntheticEvent) {
     event.preventDefault();
@@ -74,7 +75,7 @@ const SingleProduct: NextPage<Props> = (props) => {
             </Grid>
             <Grid container className="mt-2">
               <Grid item xs={12} sm={4}>
-                  <Typography>ULASAN PEMBELI</Typography>
+                  <BuyserReview />
               </Grid>
               <Grid item xs={12} sm={5}>
                  <SelectionReview/>
