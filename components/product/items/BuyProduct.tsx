@@ -4,7 +4,7 @@ import {FavoriteBorder, Chat, Share} from '@mui/icons-material'
 export default function BuyProduct(){
     return(
         <>
-            <Card sx={{ minWidth: 275 }}>
+            <Card sx={{ minWidth: 275, position: "fixed" }}>
                 <CardContent>
                     <Typography fontWeight="bold">Atur jumlah & catatan</Typography>
                     <Grid container>

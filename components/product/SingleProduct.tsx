@@ -13,6 +13,7 @@ import BuyProduct from './items/BuyProduct';
 import BuyProductMobile from './items/BuyProductMobile';
 import GalleryProduct from './items/GalleryProduct'
 import { NextPage } from 'next';
+import SelectionReview from './rating/SelectionReview';
 
 function handleClick(event: React.SyntheticEvent) {
     event.preventDefault();
@@ -69,6 +70,14 @@ const SingleProduct: NextPage<Props> = (props) => {
                 <Hidden only={['sm', 'lg']}>
                   <BuyProductMobile />
                 </Hidden>
+              </Grid>
+            </Grid>
+            <Grid container className="mt-2">
+              <Grid item xs={12} sm={4}>
+                  <Typography>ULASAN PEMBELI</Typography>
+              </Grid>
+              <Grid item xs={12} sm={5}>
+                 <SelectionReview/>
               </Grid>
             </Grid>
             </Container></div>

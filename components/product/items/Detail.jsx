@@ -47,7 +47,7 @@ export default function Detail(){
                 <Typography>Diskusi(4)</Typography>
             </Grid>
         </Grid>
-        <Typography variant="h5" className="mt-4" fontWeight="bold">Rp. 70.000</Typography>
+        <Typography variant="h5" className="mt-1" fontWeight="bold">Rp. 70.000</Typography>
         <hr></hr>
         <Typography>Pilih Ukuran : M</Typography>
         <Grid container>
@@ -65,7 +65,7 @@ export default function Detail(){
                 <TabDescription />
             </Grid>
         </Grid>
-        <Grid container className="mt-4">
+        <Grid container className="mt-2">
                 <Store />
         </Grid>
         <hr></hr>
@@ -93,7 +93,6 @@ export default function Detail(){
                 <Typography>Ongkir Reguler 18 rb - 23 rb</Typography>
             </Grid>
         </Grid>
-
         </>    
     )
 }
