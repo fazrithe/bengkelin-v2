@@ -7,6 +7,7 @@ import { Button, Grid, TextField } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 import PulsaService from '@/components/home/service/PulsaSrvice';
 import DataPackageService from '@/components/home/service/DataPackageService';
+import ListrikService from '@/components/home/service/ListrikService';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -65,7 +66,7 @@ export default function TabService(){
                   <DataPackageService />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Listrik PLN
+                  <ListrikService />
                 </TabPanel>
             </Box>
         </Box>

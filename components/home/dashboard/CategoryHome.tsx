@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/joy/Typography';
 import { CardActionArea } from '@mui/material';
+import Link from "next/link";
 
 
 export default function CategoryHome(){
@@ -12,6 +13,8 @@ export default function CategoryHome(){
       <h4>Kategori Pilihan</h4>
         <Grid container spacing={2}>
           <Grid item xs={4}>
+            
+          <Link href="/cat/[name]" as={`/cat/aksesoris`}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
@@ -27,6 +30,7 @@ export default function CategoryHome(){
                 </CardContent>
               </CardActionArea>
             </Card>
+            </Link>
           </Grid>
           <Grid item xs={4}>
             <Card sx={{ maxWidth: 345 }}>

@@ -1,6 +1,7 @@
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
+import Image from "next/image";
 import CategoryHome from "@/components/home/dashboard/CategoryHome";
 import TabService from "@/components/home/dashboard/TabService";
 import FlashSale from "@/components/home/dashboard/FlashSale";
@@ -42,49 +43,50 @@ export default function Home() {
       <div>
         <Container fixed>
           
-        <Carousel variant="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://jourdanmesinlaundry.com/wp-content/uploads/2018/09/HEADER-BANNER-SPAREPART.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://jourdanmesinlaundry.com/wp-content/uploads/2018/09/HEADER-BANNER-SPAREPART.png"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://jourdanmesinlaundry.com/wp-content/uploads/2018/09/HEADER-BANNER-SPAREPART.png"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+        <Carousel variant="dark" className="mt-3">
+          <Carousel.Item>
+            <Image
+              src="/global/banner-sparepart.png"
+              alt="Picture of the author"
+              className="d-block w-100"
+              width={500}
+              height={300}
+            />
+            <Carousel.Caption>
+            <h5>Bengkelin</h5>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/global/banner-sparepart.png"
+              alt="Picture of the author"
+              className="d-block w-100"
+              width={500}
+              height={300}
+            />
+            <Carousel.Caption>
+              <h5>Bengkelin</h5>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              src="/global/banner-sparepart.png"
+              alt="Picture of the author"
+              className="d-block w-100"
+              width={500}
+              height={300}
+            />
+            <Carousel.Caption>
+            <h5>Bengkelin</h5>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         <div style={classes.root}>
             <Grid container spacing={1} className="mt-4">
               {/*This item will be 12 units on extra small screens */}
               {/*But will be 6 units on small screens */}
               <CategoryHome />
-              <Grid item xs={12} sm={5} className="ml-2 mt-4">
+              <Grid item xs={12} sm={5.9} className="ml-2 mt-4">
                 <Paper className="mt-3">
                     <TabService />
                 </Paper>
