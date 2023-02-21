@@ -1,5 +1,6 @@
 import { AppBar, Box, Button, Grid, Hidden, IconButton, Toolbar, Typography } from "@mui/material"
 import {FavoriteBorder, Chat, Share} from '@mui/icons-material'
+import Link from "next/link"
 
 export default function CartBuyMobile(){
     return(
@@ -17,7 +18,9 @@ export default function CartBuyMobile(){
                         <Typography fontWeight="bold">RP. 70.000</Typography>
                     </Grid>
                 </Grid>
-                <Button variant="outlined" color="secondary" style={{backgroundColor: "white", width:"50%"}} className="ml-2">Beli</Button>
+                <Link href="/cart/shipment">
+                    <Button variant="outlined" color="secondary" style={{backgroundColor: "white", width:"50%"}} className="ml-2">Beli</Button>
+                </Link>
             </Toolbar> 
         </AppBar>
         </Hidden>

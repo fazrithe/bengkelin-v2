@@ -1,4 +1,5 @@
 import { Card, Hidden, CardContent, Divider, Grid, Paper, Typography, Button } from "@mui/material";
+import Link from "next/link";
 
 export default function CartBuy(){
     return(
@@ -41,7 +42,9 @@ export default function CartBuy(){
                     </Grid>
                     <Grid container paddingTop={2} paddingLeft={6}>
                         <Grid item xs={4} sm={8}>
-                            <Button variant="contained" color="secondary" fullWidth>B e l i</Button>
+                            <Link href="/cart/shipment">
+                                <Button variant="contained" color="secondary" fullWidth>B e l i</Button>
+                            </Link>
                         </Grid>
                     </Grid>
                 </CardContent>

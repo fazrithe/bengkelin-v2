@@ -1,6 +1,7 @@
 import { Card, Paper, Grid, Button, Typography, CardContent, FormGroup, FormControl, InputLabel, OutlinedInput, TextField } from "@mui/material";
 import {FavoriteBorder, Chat, Share, Palette} from '@mui/icons-material'
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function BuyProduct(){
     let [count, setCount] = useState(0)
@@ -55,7 +56,9 @@ export default function BuyProduct(){
                             <Button variant="contained" color="secondary">+ Keranjang</Button>
                         </Grid>
                         <Grid item>
-                            <Button variant="outlined" color="secondary">B e l i</Button>
+                            <Link href="/cart/shipment">
+                                <Button variant="outlined" color="secondary">B e l i</Button>
+                            </Link>
                         </Grid>
                     </Grid>
                     <Grid container className="mt-4" spacing={2}>

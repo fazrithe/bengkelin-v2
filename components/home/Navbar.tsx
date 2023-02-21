@@ -133,9 +133,11 @@ const Navbar = () => {
     <AppBar position="fixed" sx={{ bgcolor: "purple" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-          <Image src={LogoNavbar} alt="logo" width={180} />
+          <Link href="/">
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+            <Image src={LogoNavbar} alt="logo" width={180} />
           </Box>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -167,12 +169,12 @@ const Navbar = () => {
             >
                <Grid container className="ml-2">
                 <Grid item>
-                <Link href="login">
+                <Link href="/login">
                   <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="register">
+                <Link href="/register">
                   <ColorButton variant="contained" className='mr-2'>Register</ColorButton>
                 </Link>
               </Grid>
@@ -214,10 +216,10 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-          <Link href="login">
+          <Link href="/login">
           <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
           </Link>
-          <Link href="register">
+          <Link href="/register">
           <ColorButton variant="contained">Daftar</ColorButton>
           </Link>
           </Box>
