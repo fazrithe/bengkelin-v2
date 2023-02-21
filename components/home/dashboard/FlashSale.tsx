@@ -6,7 +6,7 @@ import Card from "@mui/material/Card";
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, Chip } from '@mui/material';
+import { CardActionArea, Chip, LinearProgress } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { color } from "@mui/system";
@@ -74,10 +74,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -98,10 +103,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -122,10 +132,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -146,10 +161,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -170,10 +190,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -194,10 +219,15 @@ export default function FlashSale(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
+                  <Box sx={{ width: '100%'}}>
+                    <LinearProgress variant="determinate" value={90} color="error" />
+                    <Typography variant="caption">Segera Habis</Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>

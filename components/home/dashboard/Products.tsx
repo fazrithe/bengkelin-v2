@@ -39,9 +39,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -79,9 +80,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -119,9 +121,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -159,9 +162,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -199,9 +203,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -239,9 +244,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -279,9 +285,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -319,9 +326,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -359,9 +367,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -399,9 +408,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -439,9 +449,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -479,9 +490,10 @@ export default function Products(){
                 />
                 <CardContent>
                   <Typography>helm KYP</Typography>
+                  <Typography fontWeight="bold">Rp. 151.800</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
+                    <Chip label="26%" size="small" color="error" className="mr-2"></Chip>
+                    <Typography variant="caption" style={{ textDecorationLine: 'line-through' }}>Rp. 179.500</Typography>
                   </Typography>
                   <Grid container>
                     <Grid item>
@@ -504,6 +516,7 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
+        
    </>
   )
 }
