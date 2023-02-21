@@ -105,7 +105,7 @@ export default function Login(){
             </FormGroup>
               <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                    <button type="submit" className="btn btn-primary">Masuk</button>
+                    <button type="submit" className="bttn-pill bttn-sm bttn-royal">Masuk</button>
                 </FormControl>
             </FormGroup>
             </Form>

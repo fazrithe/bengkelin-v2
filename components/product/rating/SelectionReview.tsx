@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography, Grid, InputLabel, MenuItem, FormControl, Rating, Avatar } from "@mui/material";
+import { Typography, Grid, InputLabel, MenuItem, FormControl, Rating, Avatar, Divider } from "@mui/material";
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 export default function SelectionReview(){
@@ -51,7 +51,7 @@ export default function SelectionReview(){
                 <Typography paddingTop={1}>Sangat bagus sekali</Typography>
             </Grid>
         </Grid>
-        <hr></hr>
+        <Divider/>
         <Grid container paddingTop={2}>
             <Grid item xs={8} sm={12}>
                 <Rating readOnly value={rating} />

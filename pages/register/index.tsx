@@ -131,7 +131,7 @@ export default function Register(){
                 </FormGroup>
                 <FormGroup>
                     <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                        <Button variant="contained" color="secondary">Daftar</Button>
+                        <button type="submit" className="bttn-pill bttn-sm bttn-royal">Daftar</button>
                     </FormControl>
                 </FormGroup>
         </Grid>

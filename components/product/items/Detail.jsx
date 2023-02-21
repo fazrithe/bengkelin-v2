@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Rating, Stack, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Rating, Stack, Typography } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 import TabDescription from '@/components/product/items/TabDescription'
 import Store from './Store'
@@ -48,7 +48,7 @@ export default function Detail(){
             </Grid>
         </Grid>
         <Typography variant="h5" className="mt-1" fontWeight="bold">Rp. 70.000</Typography>
-        <hr></hr>
+        <hr/>
         <Typography>Pilih Ukuran : M</Typography>
         <Grid container>
             <Grid item>
@@ -59,7 +59,7 @@ export default function Detail(){
                 </Stack>
             </Grid>
         </Grid>
-        <hr></hr>
+        <hr/>
         <Grid container>
             <Grid item>
                 <TabDescription />
@@ -68,7 +68,7 @@ export default function Detail(){
         <Grid container className="mt-2">
                 <Store />
         </Grid>
-        <hr></hr>
+        <Divider/>
         <Grid container>
             <Grid item>
                 <Typography fontWeight="bold">Pengiriman:</Typography>

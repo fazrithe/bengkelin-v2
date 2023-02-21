@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Accordion, AccordionDetails, AccordionSummary, Checkbox, Card, CardContent, FormControlLabel, FormGroup, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Checkbox, Card, CardContent, FormControlLabel, FormGroup, Typography, Divider } from "@mui/material";
 import ExpandMoreOutlined from '@mui/icons-material/ExpandMoreOutlined'
 import { FormControl } from 'react-bootstrap';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -14,7 +14,7 @@ export default function Filter(){
         <Card variant="outlined">
             <CardContent>
                 <Typography fontWeight="bold">Filter</Typography>
-                <hr></hr>
+                <Divider/>
                 <Accordion variant="outlined" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary expandIcon={<ExpandMoreOutlined />} aria-controls="panel1a-content" id="panel1a-header">
                     <Typography>Aksesoris Mobil</Typography>
