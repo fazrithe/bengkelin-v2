@@ -1,4 +1,4 @@
-import { Card, Hidden, CardContent, Divider, Grid, Paper, Typography } from "@mui/material";
+import { Card, Hidden, CardContent, Divider, Grid, Paper, Typography, Button } from "@mui/material";
 
 export default function CartBuy(){
     return(
@@ -37,6 +37,11 @@ export default function CartBuy(){
                         </Grid>
                         <Grid item xs={4} sm={4}>
                             <Typography fontWeight="bold">Rp. 70.000</Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container paddingTop={2} paddingLeft={6}>
+                        <Grid item xs={4} sm={8}>
+                            <Button variant="contained" color="secondary" fullWidth>B e l i</Button>
                         </Grid>
                     </Grid>
                 </CardContent>
