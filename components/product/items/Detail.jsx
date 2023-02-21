@@ -21,7 +21,7 @@ export default function Detail(){
     let value = 3.5;
     return(
         <>
-        <Typography fontWeight="lg" variant="h6">Helm Kyt Dj Maru Djmaru Solid/Polos Pearl White - M</Typography>
+        <Typography fontWeight="lg" variant="h6">helm KYP Dj Maru Djmaru Solid/Polos Pearl White - M</Typography>
         <Grid container spacing={1}>
             <Grid item xs={8} sm={3}>
                 <Typography>Terjual 60 </Typography>

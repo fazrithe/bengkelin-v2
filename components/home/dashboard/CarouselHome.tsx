@@ -46,7 +46,7 @@ export default function CarouselHome(){
         </Carousel>
         </Hidden>
         <Hidden only={['sm', 'lg']}>
-        <Carousel variant="dark" className="mt-3">
+        <Carousel variant="dark" className="mt-1">
             <Carousel.Item>
             <Image
                 src="/global/banner-sparepart.png"

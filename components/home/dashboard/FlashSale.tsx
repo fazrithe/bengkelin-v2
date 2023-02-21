@@ -62,18 +62,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
@@ -86,18 +86,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
@@ -110,18 +110,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
@@ -134,18 +134,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
@@ -158,18 +158,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
@@ -182,18 +182,18 @@ export default function FlashSale(){
         <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/HelemKYT`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmkyt.jpg"
-                  alt="Helm KYT"
+                  image="/products/helmKYP.jpg"
+                  alt="helm KYP"
                 />
                 <CardContent>
-                  <Typography>Helm KYT</Typography>
+                  <Typography>helm KYP</Typography>
                   <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000

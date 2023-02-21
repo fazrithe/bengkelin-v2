@@ -20,10 +20,16 @@ const classes = {
     }
   };
 
-export default function Products(){
+export default function CartRecomProduct(){
   return(
     <>
-      <Grid item xs={6} sm={2}>
+    <Grid container paddingTop={2} paddingBottom={2}>
+        <Grid item>
+            <Typography fontWeight="bold" variant="h6">Rekomendasi Produk</Typography>
+        </Grid>
+    </Grid>
+    <Grid container>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
         as={`/product/helmKYP`}
@@ -47,10 +53,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -71,10 +77,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -95,10 +101,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -119,10 +125,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -143,10 +149,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -167,10 +173,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -191,10 +197,10 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/helmKYP`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
@@ -215,102 +221,7 @@ export default function Products(){
             </Card>
         </Link>
         </Grid>
-        <Grid item xs={6} sm={2}>
-        <Link 
-        href="/product/[name]" 
-        as={`/product/Helm`}
-        >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/products/helmKYP.jpg"
-                  alt="helm KYP"
-                />
-                <CardContent>
-                  <Typography>helm KYP</Typography>
-                  <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-        </Link>
-        </Grid>
-        <Grid item xs={6} sm={2}>
-        <Link 
-        href="/product/[name]" 
-        as={`/product/Helm`}
-        >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/products/helmKYP.jpg"
-                  alt="helm KYP"
-                />
-                <CardContent>
-                  <Typography>helm KYP</Typography>
-                  <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-        </Link>
-        </Grid>
-        <Grid item xs={6} sm={2}>
-        <Link 
-        href="/product/[name]" 
-        as={`/product/Helm`}
-        >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/products/helmKYP.jpg"
-                  alt="helm KYP"
-                />
-                <CardContent>
-                  <Typography>helm KYP</Typography>
-                  <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-        </Link>
-        </Grid>
-        <Grid item xs={6} sm={2}>
-        <Link 
-        href="/product/[name]" 
-        as={`/product/Helm`}
-        >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/products/helmKYP.jpg"
-                  alt="helm KYP"
-                />
-                <CardContent>
-                  <Typography>helm KYP</Typography>
-                  <Typography gutterBottom fontWeight="bold" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-        </Link>
-        </Grid>
+    </Grid>
    </>
   )
 }
