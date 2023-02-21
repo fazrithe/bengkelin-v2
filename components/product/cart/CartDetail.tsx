@@ -1,6 +1,6 @@
 import { Container, Grid, Typography, Checkbox, Divider, ListItemText, Button } from "@mui/material"
 import Image from "next/image"
-import ImageProduct from "@/public/products/helmKYP.jpg"
+import ImageProduct from "@/public/products/helmKYP-1.jpg"
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import React, { useState } from "react";
 
