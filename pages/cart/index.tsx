@@ -1,5 +1,6 @@
 import { Container, Grid } from "@mui/material"
 import CartDetail from "@/components/product/cart/CartDetail"
+import CartBuy from "@/components/product/cart/CartBuy"
 
 export default function Cart(){
     return(
@@ -10,7 +11,7 @@ export default function Cart(){
                 <CartDetail/>
             </Grid>
             <Grid item xs={8} sm={4}>
-                Test
+                <CartBuy/>
             </Grid>
         </Grid>
         </Container>

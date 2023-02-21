@@ -9,6 +9,7 @@ import '@fontsource/roboto/700.css';
 import Link from 'next/link';
 import Navbar from "@/components/home/Navbar"
 import Footer from '@/components/home/Footer';
+import { Grid, Box } from '@mui/material';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,8 +25,10 @@ export default function App({ Component, pageProps }: AppProps) {
      </Head>
      
      <Navbar />
-        <Component {...pageProps} />
-       {/* credits */}
+     <Box component="main" sx={{ p: 3 }} marginTop={6}>
+          <Component {...pageProps}/>
+          {/* credits */}
+          </Box>
       <Footer />
   </>
   )

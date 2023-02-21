@@ -127,7 +127,8 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "purple" }}>
+    <Box sx={{ display: 'flex' }}>
+    <AppBar position="fixed" sx={{ bgcolor: "purple" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -237,6 +238,7 @@ const Navbar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    </Box>
   );
 };
 export default Navbar;
