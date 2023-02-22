@@ -47,7 +47,7 @@ export default function Detail(){
                 <Typography>Diskusi(4)</Typography>
             </Grid>
         </Grid>
-        <Typography variant="h5" className="mt-1" fontWeight="bold">Rp. 70.000</Typography>
+        <Typography variant="h5" className="mt-1" fontWeight="bold">Rp. 151.800</Typography>
         <hr/>
         <Typography>Pilih Ukuran : M</Typography>
         <Grid container>

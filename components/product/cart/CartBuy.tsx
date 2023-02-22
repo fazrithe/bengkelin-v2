@@ -28,7 +28,7 @@ export default function CartBuy(){
                             <Typography>Total Harga (1 Brang)</Typography>
                         </Grid>
                         <Grid item xs={4} sm={4}>
-                            <Typography>Rp. 70.000</Typography>
+                            <Typography>Rp. 151.800</Typography>
                         </Grid>
                     </Grid>
                     <hr/>
@@ -37,7 +37,7 @@ export default function CartBuy(){
                             <Typography fontWeight="bold">Total Harga</Typography>
                         </Grid>
                         <Grid item xs={4} sm={4}>
-                            <Typography fontWeight="bold">Rp. 70.000</Typography>
+                            <Typography fontWeight="bold">Rp. 151.800</Typography>
                         </Grid>
                     </Grid>
                     <Grid container paddingTop={2} paddingLeft={6}>

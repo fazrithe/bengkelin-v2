@@ -48,7 +48,7 @@ export default function BuyProduct(){
                             <Typography>Subtotal</Typography>
                         </Grid>
                         <Grid item xs={4} sm="auto" paddingLeft={2}>
-                            <Typography variant="h5" fontWeight="bold">Rp. 70.000</Typography>
+                            <Typography variant="h5" fontWeight="bold">Rp. 151.800</Typography>
                         </Grid>
                     </Grid>
                     <Grid container paddingTop={1} spacing={2}>

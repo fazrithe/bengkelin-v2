@@ -20,9 +20,11 @@ import { spacing } from '@mui/system';
 import { purple } from '@mui/material/colors';
 import Button, { ButtonProps } from '@mui/material/Button';
 import Link from 'next/link';
-import { Grid } from '@mui/material';
+import { Grid, Popover, MenuList, ListItemIcon, ListItemText } from '@mui/material';
 import Image from 'next/image';
 import LogoNavbar from '@/public/logowebtf.png'
+import MenuCategories from './MenuCategories';
+import { ContentCut, Assignment, Star, Favorite, RecordVoiceOver, SupportAgent } from '@mui/icons-material';
 
 const pages = ['Categories'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -128,6 +130,20 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
 
+  //categories
+  const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
   return (
     <Box sx={{ display: 'flex' }}>
     <AppBar position="fixed" sx={{ bgcolor: "purple" }}>
@@ -179,23 +195,72 @@ const Navbar = () => {
                 </Link>
               </Grid>
             </Grid>
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+            <MenuList>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemText>
+                    <Typography fontWeight="bold">Aktivitas Saya</Typography>
+                  </ListItemText>
                 </MenuItem>
-              ))}
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Assignment fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Daftar Transaksi</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Star fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Ulasan</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Favorite fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Wishlist</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemText>
+                    <Typography fontWeight="bold">Pusat Bantuan</Typography>
+                  </ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <RecordVoiceOver fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Pesanan Dikomplain</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <SupportAgent fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Bantuan Bengkelin Care</ListItemText>
+                </MenuItem>
+              </MenuList>
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={handleClick}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>
             ))}
+            <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+            >
+              <MenuCategories/>
+            </Popover>
           </Box>
           <Search>
             <SearchIconWrapper>

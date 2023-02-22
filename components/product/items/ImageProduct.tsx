@@ -33,7 +33,7 @@ export default function Image() {
         return (
           <ImageListItem key={item.img} cols={cols} rows={rows}>
             <img
-              {...srcset(item.img, 250, 200, rows, cols)}
+              {...srcset(item.img, 240, 200, rows, cols)}
               alt={item.title}
               loading="lazy"
             />
