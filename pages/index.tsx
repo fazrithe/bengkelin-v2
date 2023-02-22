@@ -8,6 +8,7 @@ import FlashSale from "@/components/home/dashboard/FlashSale";
 import CardHome from "@/components/home/dashboard/CardHome";
 import Products from "@/components/home/dashboard/Products";
 import CarouselHome from "@/components/home/dashboard/CarouselHome";
+import NavbarBottom from "@/components/home/NavbarBottom";
 
 const classes = {
   root: {
@@ -50,6 +51,7 @@ export default function Home() {
               </Grid>
             </Grid>
           </div>
+          <NavbarBottom/>
         </Container>
       </div>
   )
