@@ -6,7 +6,7 @@ export default function ListService(){
         <>
          <Hidden only={['sm', 'lg']}>
             <Paper className="mt-4 mb-2">
-                <Grid container padding={1} paddingLeft={2} spacing={1.5}>
+                <Grid container padding={1} paddingLeft={1} spacing={1.5}>
                     <Grid item>
                         <Grid container>
                             <Grid item paddingLeft={3}> 
