@@ -69,7 +69,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
@@ -98,7 +98,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
@@ -127,7 +127,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
@@ -156,7 +156,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
@@ -185,7 +185,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
@@ -214,7 +214,7 @@ export default function FlashSale(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/helmKYP-1.jpg"
+                  image="/products/helmkyp.jpg"
                   alt="helm KYP"
                 />
                 <CardContent>
