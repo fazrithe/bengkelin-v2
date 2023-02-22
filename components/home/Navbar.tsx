@@ -207,7 +207,7 @@ const Navbar = () => {
             />
           </Search>
           <Box sx={{ flexGrow: 0, padding:1 }}>
-            <Link href="cart">
+            <Link href="/cart">
             <Tooltip title="Open your cart">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <ShoppingCart  style={{ color: "white" }} />
