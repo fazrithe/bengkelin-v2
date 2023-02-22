@@ -16,7 +16,7 @@ export default function BuyProduct(){
     }
     return(
         <>
-            <Card sx={{ minWidth: 275, position: "fixed" }}>
+            <Card sx={{ minWidth: 345, position: "fixed" }}>
                 <CardContent>    
                 <Paper elevation={0}><Typography variant="h6" fontWeight="bold" color="secondary">Brand Pilihan</Typography></Paper>
                     <Typography fontWeight="bold">Atur jumlah & catatan</Typography>

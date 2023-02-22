@@ -1,4 +1,5 @@
 import ShipmentOrder from "@/components/product/cart/shipment/ShipmentOrder";
+import ShipmentPay from "@/components/product/cart/shipment/ShipmentPay";
 import { Container, Grid, Typography, Divider, Button } from "@mui/material";
 import { sizing } from "@mui/system";
 
@@ -45,9 +46,18 @@ export default function Shipment(){
                     <Grid container>
                         <ShipmentOrder/>
                     </Grid>
+                    <hr/>
+                    <Grid container paddingTop="2">
+                        <Grid item xs={6} sm={8}>
+                            <Typography fontWeight="bold">Sub Total</Typography>
+                        </Grid>
+                        <Grid item xs={6} sm={4}>
+                            <Typography fontWeight="bold">Rp. 161.800</Typography>
+                        </Grid>
+                    </Grid>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    Test
+                    <ShipmentPay/>
                 </Grid>
             </Grid>
         </Container>

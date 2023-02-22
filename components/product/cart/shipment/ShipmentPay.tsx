@@ -1,11 +1,10 @@
-import { Card, Hidden, CardContent, Divider, Grid, Paper, Typography, Button } from "@mui/material";
-import Link from "next/link";
+import { Hidden, Card, CardContent, Paper, Grid, Typography, Link, Button } from "@mui/material"
 
-export default function CartBuy(){
+export default function ShipmentPay(){
     return(
         <>
             <Hidden only="xs">
-            <Card sx={{ minWidth: 355, position: "fixed" }}>
+            <Card sx={{ minWidth: 355, position: "fixed", marginLeft:"12px" }}>
                 <CardContent>
                     <Paper>
                         <Grid container padding={1}>
@@ -28,7 +27,15 @@ export default function CartBuy(){
                             <Typography>Total Harga (1 Brang)</Typography>
                         </Grid>
                         <Grid item xs={4} sm={4}>
-                            <Typography>Rp. 70.000</Typography>
+                            <Typography>Rp. 151.800</Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container paddingTop={1}>
+                        <Grid item xs={4} sm={8}>
+                            <Typography>Total Ongkos Kirim</Typography>
+                        </Grid>
+                        <Grid item xs={4} sm={4}>
+                            <Typography>Rp. 10.000</Typography>
                         </Grid>
                     </Grid>
                     <hr/>
@@ -37,7 +44,7 @@ export default function CartBuy(){
                             <Typography fontWeight="bold">Total Harga</Typography>
                         </Grid>
                         <Grid item xs={4} sm={4}>
-                            <Typography fontWeight="bold">Rp. 70.000</Typography>
+                            <Typography fontWeight="bold">Rp. 161.800</Typography>
                         </Grid>
                     </Grid>
                     <Grid container paddingTop={2} paddingLeft={6}>

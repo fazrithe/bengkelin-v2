@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material"
+import { Button, Grid, Typography, Divider } from "@mui/material"
 import ImageProduct from "@/public/products/helmkyp.jpg"
 import Image from "next/image"
 import ShipmentCourier from "./ShipmentCourier"
@@ -6,7 +6,7 @@ import ShipmentCourier from "./ShipmentCourier"
 export default function ShipmentOrder(){
     return(
         <>
-            <Grid item xs={12} sm={7}>
+            <Grid item xs={12} sm={7} paddingBottom={2}>
                 <Grid container>
                     <Grid item xs={4} sm={3}>
                         <Image src={ImageProduct}  alt="Helem KYP" width={100} />
@@ -18,7 +18,7 @@ export default function ShipmentOrder(){
                     </Grid>
                 </Grid>    
             </Grid>
-            <Grid item xs={4} sm={5}>
+            <Grid item xs={12} sm={5}>
                 <ShipmentCourier/>
             </Grid>
         </>
