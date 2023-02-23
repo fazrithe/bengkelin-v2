@@ -30,13 +30,13 @@ export default function CartRecomProduct(){
             <Typography fontWeight="bold" variant="h6">Rekomendasi Produk</Typography>
         </Grid>
     </Grid>
-    <Grid container>
+    <Grid container spacing={1}>
     <Grid item xs={6} sm={2.9}>
         <Link 
         href="/product/[name]" 
         as={`/product/helmKYP`}
         >
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ maxWidth: 245 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"

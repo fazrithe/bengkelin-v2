@@ -66,16 +66,16 @@ export default function CartDetail(){
                     <Typography variant="caption" color="secondary">Tulis Catatan Catatan</Typography>
                 </Grid>
                 <Grid item xs={6} sm={4} paddingBottom={1}>
-                    <Grid container>
+                    <Grid container spacing={1}>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={6} sm={5}>
+                                <Grid item xs={5} sm={4}>
                                     <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
                                         <RemoveCircle/>
                                     </Button>
                                 </Grid>
-                                <Grid item xs={1} sm={1} padding={1}>
-                                    <Typography fontWeight="bold" color="secondary">{count}</Typography>
+                                <Grid item xs={1} sm={2}>
+                                    <Typography fontWeight="bold" paddingLeft={1} color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
                                     <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
@@ -122,16 +122,16 @@ export default function CartDetail(){
                     <Typography variant="caption" color="secondary">Tulis Catatan Catatan</Typography>
                 </Grid>
                 <Grid item xs={6} sm={4} paddingBottom={1}>
-                    <Grid container>
+                    <Grid container spacing={1}>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={6} sm={5}>
+                                <Grid item xs={5} sm={4}>
                                     <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
                                         <RemoveCircle/>
                                     </Button>
                                 </Grid>
-                                <Grid item xs={1} sm={1} padding={1}>
-                                    <Typography fontWeight="bold" color="secondary">{count}</Typography>
+                                <Grid item xs={1} sm={2}>
+                                    <Typography fontWeight="bold" paddingLeft={1} color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
                                     <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
@@ -178,16 +178,16 @@ export default function CartDetail(){
                     <Typography variant="caption" color="secondary">Tulis Catatan Catatan</Typography>
                 </Grid>
                 <Grid item xs={6} sm={4} paddingBottom={1}>
-                    <Grid container>
+                    <Grid container spacing={1}>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={6} sm={5}>
+                                <Grid item xs={5} sm={4}>
                                     <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
                                         <RemoveCircle/>
                                     </Button>
                                 </Grid>
-                                <Grid item xs={1} sm={1} padding={1}>
-                                    <Typography fontWeight="bold" color="secondary">{count}</Typography>
+                                <Grid item xs={1} sm={2}>
+                                    <Typography fontWeight="bold" paddingLeft={1} color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
                                     <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
@@ -200,7 +200,6 @@ export default function CartDetail(){
                 </Grid>
             </Grid>
         <Divider/>
-        
         </>
     )
 }
