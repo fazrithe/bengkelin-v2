@@ -20,7 +20,6 @@ export default function NavbarBottom(){
                 <BottomNavigationAction label="Home" icon={<Home color="secondary"/>} />
                 <BottomNavigationAction label="Komunitas" icon={<Diversity3 color="secondary"/>} />
                 <BottomNavigationAction label="Bengkel" icon={<BuildCircle color="secondary" />} />
-                <BottomNavigationAction label="Wishlist" icon={<Favorite color="secondary"/>} />
                 <BottomNavigationAction label="Transaksi" icon={<Assignment color="secondary"/>} />
             </BottomNavigation>
         </Paper>

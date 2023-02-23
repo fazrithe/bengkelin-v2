@@ -3,6 +3,7 @@ import Image from "next/image"
 import ImageProduct from "@/public/products/helmkyp.jpg"
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import React, { useState } from "react";
+import { AddCircle, RemoveCircle } from '@mui/icons-material';
 
 export default function CartDetail(){
     let [count, setCount] = useState(0)
@@ -68,17 +69,17 @@ export default function CartDetail(){
                     <Grid container>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={7} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={decrementCount}>
-                                        <Typography fontWeight="bold">-</Typography>
+                                <Grid item xs={6} sm={5}>
+                                    <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
+                                        <RemoveCircle/>
                                     </Button>
                                 </Grid>
                                 <Grid item xs={1} sm={1} padding={1}>
                                     <Typography fontWeight="bold" color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={incrementCount}>
-                                        <Typography fontWeight="bold">+</Typography>
+                                    <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
+                                        <AddCircle/>
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -124,17 +125,17 @@ export default function CartDetail(){
                     <Grid container>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={7} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={decrementCount}>
-                                        <Typography fontWeight="bold">-</Typography>
+                                <Grid item xs={6} sm={5}>
+                                    <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
+                                        <RemoveCircle/>
                                     </Button>
                                 </Grid>
                                 <Grid item xs={1} sm={1} padding={1}>
                                     <Typography fontWeight="bold" color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={incrementCount}>
-                                        <Typography fontWeight="bold">+</Typography>
+                                    <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
+                                        <AddCircle/>
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -180,17 +181,17 @@ export default function CartDetail(){
                     <Grid container>
                         <Grid item xs={8} sm={8}>
                             <Grid container spacing={3}>
-                                <Grid item xs={7} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={decrementCount}>
-                                        <Typography fontWeight="bold">-</Typography>
+                                <Grid item xs={6} sm={5}>
+                                    <Button variant="text" size="small" color="secondary" onClick={decrementCount}>
+                                        <RemoveCircle/>
                                     </Button>
                                 </Grid>
                                 <Grid item xs={1} sm={1} padding={1}>
                                     <Typography fontWeight="bold" color="secondary">{count}</Typography>
                                 </Grid>
                                 <Grid item xs={2} sm={5}>
-                                    <Button variant="outlined" size="small" color="secondary" onClick={incrementCount}>
-                                        <Typography fontWeight="bold">+</Typography>
+                                    <Button variant="text" size="small" color="secondary" onClick={incrementCount}>
+                                        <AddCircle/>
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -199,6 +200,7 @@ export default function CartDetail(){
                 </Grid>
             </Grid>
         <Divider/>
+        
         </>
     )
 }
