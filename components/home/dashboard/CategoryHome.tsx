@@ -51,13 +51,13 @@ export default function CategoryHome(){
             </Link>
           </Grid>
           <Grid item xs={4}>
-            <Link href="/cat/[name]" as={`/cat/bengkel`}>
+            <Link href="/workshop" as={`/workshop`}>
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/bengkel.jpg"
+                  image="./workshop/workshop.jpg"
                   alt="Komunitas"
                 />
                 <CardContent>
