@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid"
 import Card from "@mui/material/Card";
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/joy/Typography';
+import { Typography } from "@mui/material";
 import { CardActionArea } from '@mui/material';
 import Link from "next/link";
 
@@ -10,7 +10,9 @@ import Link from "next/link";
 export default function CategoryHome(){
   return(
     <Grid item xs={12} sm={6}>
-      <h4>Kategori Pilihan</h4>
+        <Typography gutterBottom variant="h6" component="div">
+          Kategori Pilihan
+        </Typography>
         <Grid container spacing={2}>
           <Grid item xs={4}>
           <Link href="/cat/[name]" as={`/cat/aksesoris`}>
@@ -23,7 +25,7 @@ export default function CategoryHome(){
                   alt="Aksesoris"
                 />
                 <CardContent>
-                  <Typography fontSize="14" fontWeight="lg">
+                  <Typography fontSize="14" fontWeight="bold">
                     Aksesoris
                   </Typography>
                 </CardContent>
@@ -42,7 +44,7 @@ export default function CategoryHome(){
                   alt="green iguana"
                 />
                 <CardContent>
-                  <Typography fontSize="14" fontWeight="lg">
+                  <Typography fontSize="14" fontWeight="bold">
                     Sparepart
                   </Typography>
                 </CardContent>
@@ -61,7 +63,7 @@ export default function CategoryHome(){
                   alt="Komunitas"
                 />
                 <CardContent>
-                  <Typography fontSize="14" fontWeight="lg">
+                  <Typography fontSize="14" fontWeight="bold">
                     Bengkel
                   </Typography>
                 </CardContent>

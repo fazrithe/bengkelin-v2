@@ -12,6 +12,7 @@ import CarouselHome from "@/components/home/dashboard/CarouselHome";
 import NavbarBottom from "@/components/home/NavbarBottom";
 import PayReward from "@/components/home/pay/PayReward";
 import ListService from "@/components/home/service/mobile/ListService";
+import WorkshopHome from "@/components/home/dashboard/WorkshopHome";
 
 const classes = {
   root: {
@@ -49,6 +50,9 @@ export default function Home() {
               </Hidden>
               <Grid container spacing={1} className="mt-1">
                 <FlashSale />
+              </Grid>
+              <Grid container spacing={1} className="mt-1">
+                <WorkshopHome/>
               </Grid>
               <Grid container spacing={1} className="mt-4">
                 <CardHome />
