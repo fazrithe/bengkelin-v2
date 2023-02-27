@@ -16,21 +16,22 @@ export const userService = {
 
 function login(Email, Password){
     return fetchWrapper.post(`${baseUrl}/auth/login`, { Email, Password })
-    .then(user => {
+    .then(response => {
         // publish user to subscribers and store in local storage to stay logged in between page refreshes
-        userSubject.next(user);
-        if(user.status === "success"){
+        userSubject.next(response.data);
+        if(response.status === "success"){
             
-            console.log(user.status);
-            localStorage.setItem('user', JSON.stringify(user));
-            localStorage.setItem('userLog', JSON.stringify(user.status));
-            return user;
+            console.log(response.status);
+            localStorage.setItem('user', JSON.stringify(response.data));
+            localStorage.setItem('userLog', JSON.stringify(response.status));
+            return response.status;
         }else{
             return logout();
         }
     })
     .catch((error) => {
         //assign error to state "validation"
-        return "error";
+        // return "error";
+        return error;
     })
 }

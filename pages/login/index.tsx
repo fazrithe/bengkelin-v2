@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FormGroup, FormControl, Container, Stack, Breadcrumbs, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, Paper, Typography} from '@mui/material'
+import { Alert, AlertTitle, FormGroup, FormControl, Container, Stack, Breadcrumbs, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, Paper, Typography} from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
@@ -9,6 +9,7 @@ import { Formik, Field, Form, FormikHelpers } from 'formik';
 import { useState } from 'react';
 import { userService } from '@/services/user.service';
 import { useRouter } from 'next/router';
+import * as Yup from 'yup';
 
 interface Values {
     email: string;
@@ -35,18 +36,23 @@ export default function Login(){
     const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [resError, setError] = useState('');
 
     const submitData = async (e: React.SyntheticEvent) => {
         e.preventDefault();
         return userService.login(email, password)
                 .then((response) => {
-                    const returnUrl = router.query.returnUrl || '/';
-                    router.push('/');
+                    if(response == 'success'){
+                        router.push('/');
+                    }else{
+                        setError(response);
+                        router.push('/login');
+                    }
                 })
-                .catch();
+            .catch();
       };
     return(
-     
+        
         <Container fixed>
             <Stack spacing={2} className="mt-2">
                 <Breadcrumbs
@@ -58,6 +64,7 @@ export default function Login(){
             </Stack>  
         <Grid container alignItems="center" className="mt-4 d-flex justify-content-center">
         <Paper elevation={0}>
+        {resError ? <Alert severity="error"><AlertTitle>Error</AlertTitle>{resError}</Alert> : ''}
             <Grid container alignItems="center" className="mt-4">
                 <Grid item xs={9} sm={9}>
                     <Typography variant="h6">Masuk</Typography>
