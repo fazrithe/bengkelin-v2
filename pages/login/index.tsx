@@ -6,6 +6,9 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Formik, Field, Form, FormikHelpers } from 'formik';
+import { useState } from 'react';
+import { userService } from '@/services/user.service';
+import { useRouter } from 'next/router';
 
 interface Values {
     email: string;
@@ -28,23 +31,22 @@ export default function Login(){
           Login
         </Typography>,
       ];
-    return(
-        <Formik
-                initialValues={{
-                    email: '',
-                    password: '',
-                }}
+    
+    const router = useRouter();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-                onSubmit={(
-                    values: Values,
-                    { setSubmitting }: FormikHelpers<Values>
-                ) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 500);
-                }}
-            >
+    const submitData = async (e: React.SyntheticEvent) => {
+        e.preventDefault();
+        return userService.login(email, password)
+                .then((response) => {
+                    const returnUrl = router.query.returnUrl || '/';
+                    router.push('/');
+                })
+                .catch();
+      };
+    return(
+     
         <Container fixed>
             <Stack spacing={2} className="mt-2">
                 <Breadcrumbs
@@ -66,7 +68,7 @@ export default function Login(){
                     </Link>
                 </Grid>
             </Grid>
-            <Form>
+            <form onSubmit={submitData}>
             <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
                 <InputLabel color="secondary">Email</InputLabel>
@@ -76,6 +78,8 @@ export default function Login(){
                     color="secondary"
                     name="email"
                     id="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                 />
                 </FormControl>
             </FormGroup>
@@ -100,6 +104,8 @@ export default function Login(){
                     </InputAdornment>
                     }
                     label="Password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
                 />
                 </FormControl>
             </FormGroup>
@@ -108,10 +114,9 @@ export default function Login(){
                     <button type="submit" className="bttn-pill bttn-sm bttn-royal">Masuk</button>
                 </FormControl>
             </FormGroup>
-            </Form>
+            </form>
             </Paper>
             </Grid>
             </Container>
-            </Formik>
     )
 }
