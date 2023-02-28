@@ -7,11 +7,39 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Link from 'next/link';
+import * as React from 'react';
 import Navbar from "@/components/home/Navbar"
 import Footer from '@/components/home/Footer';
 import { Grid, Box } from '@mui/material';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { string } from 'yup';
+import { userService } from '@/services/user.service';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const [user, setUser] = useState(null);
+  const [authorized, setAuthorized] = useState(false);
+
+  React.useEffect(() => {
+    authCheck(router.asPath);
+  })
+
+  function authCheck(url: string){
+    setUser(userService.userValue)
+    // console.log(userService.userValue?.Name);
+    const path = url.split('?')[0];
+    const publicPaths = ['/login', '/register'];
+    if (!userService.userValue && !publicPaths.includes(path)) {
+        setAuthorized(false);
+        router.push({
+            pathname: '/login',
+            query: { returnUrl: router.asPath }
+        });
+    } else {
+        setAuthorized(true);
+    }
+  }
   return (
   <>
       <Head>
@@ -24,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
          <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"/>
      </Head>
      
-     <Navbar />
+     {authorized ? <Navbar /> : <Navbar/>}
      <Box component="main" sx={{ paddingTop: 2 }} marginTop={6}>
           <Component {...pageProps}/>
           {/* credits */}
