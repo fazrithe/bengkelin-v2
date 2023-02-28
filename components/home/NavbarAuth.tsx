@@ -20,7 +20,7 @@ import { spacing } from '@mui/system';
 import { purple } from '@mui/material/colors';
 import Button, { ButtonProps } from '@mui/material/Button';
 import Link from 'next/link';
-import { Grid, Popover, MenuList, ListItemIcon, ListItemText } from '@mui/material';
+import { Grid, Popover, MenuList, ListItemIcon, ListItemText, Paper } from '@mui/material';
 import Image from 'next/image';
 import LogoNavbar from '@/public/logowebtf.png'
 import MenuCategories from './MenuCategories';
@@ -247,6 +247,12 @@ const NavbarAuth = () => {
                   </ListItemIcon>
                   <ListItemText>Bantuan Bengkelin Care</ListItemText>
                 </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Logout fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText onClick={logout}>Logout</ListItemText>
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
@@ -313,6 +319,19 @@ const NavbarAuth = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              
+                <Paper>
+               <Grid container padding={1}>
+                  <Grid item paddingLeft={2}>
+                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                      <Avatar alt="Remy Sharp" src="/user/avatar.jpg" />
+                    </IconButton>
+                  </Grid>
+                  <Grid item padding={1}> 
+                    <Typography fontWeight="bold">Fazri</Typography>
+                  </Grid>
+                </Grid>
+                </Paper>
                 <MenuList>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <ListItemText>
