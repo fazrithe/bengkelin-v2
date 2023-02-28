@@ -14,7 +14,7 @@ import { Grid, Box } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { string } from 'yup';
-import { userService } from '@/services/user.service';
+
 import NavbarAuth from '@/components/home/NavbarAuth';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -23,22 +23,16 @@ export default function App({ Component, pageProps }: AppProps) {
   const [authorized, setAuthorized] = useState(false);
 
   React.useEffect(() => {
-    authCheck(router.asPath);
+    authCheck();
   })
 
-  function authCheck(url: string){
-    setUser(userService.userValue)
-    // console.log(userService.userValue?.Name);
-    const path = url.split('?')[0];
-    const publicPaths = ['/login', '/register'];
-    if (!userService.userValue && !publicPaths.includes(path)) {
-        setAuthorized(false);
-        router.push({
-            pathname: '/login',
-            query: { returnUrl: router.asPath }
-        });
+  function authCheck(){
+    const status = localStorage.getItem('status');
+    if (status != 'active') {
+      setAuthorized(false);
+      router.push('/login');
     } else {
-        setAuthorized(true);
+      setAuthorized(true);
     }
   }
   return (

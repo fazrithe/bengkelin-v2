@@ -7,7 +7,6 @@ import Link from 'next/link';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Formik, Field, Form, FormikHelpers } from 'formik';
 import { useState } from 'react';
-import { userService } from '@/services/user.service';
 import { useRouter } from 'next/router';
 import * as Yup from 'yup';
 
@@ -39,17 +38,8 @@ export default function Login(){
     const [resError, setError] = useState('');
 
     const submitData = async (e: React.SyntheticEvent) => {
-        e.preventDefault();
-        return userService.login(email, password)
-                .then((response) => {
-                    if(response == 'success'){
-                        router.push('/');
-                    }else{
-                        setError(response);
-                        router.push('/login');
-                    }
-                })
-            .catch();
+        localStorage.setItem('status', 'active');
+        router.push('/');
       };
     return(
         

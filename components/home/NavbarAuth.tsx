@@ -185,13 +185,17 @@ const NavbarAuth = () => {
             >
                <Grid container className="ml-2">
                 <Grid item>
-                <Link href="/login">
-                  <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
+                <Link href="/profile">
+                <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/user/avatar.jpg" />
+              </IconButton>
+            </Tooltip>
                 </Link>
               </Grid>
-              <Grid item>
-                <Link href="/register">
-                  <ColorButton variant="contained" className='mr-2'>Register</ColorButton>
+              <Grid item paddingLeft={2}>
+                <Link href="/profile">
+                  <ColorButton variant="contained" className='mr-2'>Fazri</ColorButton>
                 </Link>
               </Grid>
             </Grid>
@@ -281,12 +285,70 @@ const NavbarAuth = () => {
             </Link>
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-          <Link href="/login">
-          <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
-          </Link>
-          <Link href="/register">
-          <ColorButton variant="contained">Daftar</ColorButton>
-          </Link>
+          <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/user/avatar.jpg" />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: '45px' }}
+              id="menu-appbar"
+              anchorEl={anchorElUser}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+            >
+                <MenuList>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemText>
+                    <Typography fontWeight="bold">Aktivitas Saya</Typography>
+                  </ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Assignment fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Daftar Transaksi</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Star fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Ulasan</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Favorite fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Wishlist</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemText>
+                    <Typography fontWeight="bold">Pusat Bantuan</Typography>
+                  </ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <RecordVoiceOver fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Pesanan Dikomplain</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <SupportAgent fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Bantuan Bengkelin Care</ListItemText>
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </Box>
         </Toolbar>
       </Container>
