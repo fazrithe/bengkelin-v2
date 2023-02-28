@@ -15,6 +15,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { string } from 'yup';
 import { userService } from '@/services/user.service';
+import NavbarAuth from '@/components/home/NavbarAuth';
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -52,7 +53,7 @@ export default function App({ Component, pageProps }: AppProps) {
          <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"/>
      </Head>
      
-     {authorized ? <Navbar /> : <Navbar/>}
+     {authorized ? <NavbarAuth /> : <Navbar/>}
      <Box component="main" sx={{ paddingTop: 2 }} marginTop={6}>
           <Component {...pageProps}/>
           {/* credits */}
