@@ -30,7 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
     const status = localStorage.getItem('status');
     if (status != 'active') {
       setAuthorized(false);
-      router.push('/login');
     } else {
       setAuthorized(true);
     }

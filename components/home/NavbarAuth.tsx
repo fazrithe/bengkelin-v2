@@ -24,7 +24,8 @@ import { Grid, Popover, MenuList, ListItemIcon, ListItemText } from '@mui/materi
 import Image from 'next/image';
 import LogoNavbar from '@/public/logowebtf.png'
 import MenuCategories from './MenuCategories';
-import { ContentCut, Assignment, Star, Favorite, RecordVoiceOver, SupportAgent } from '@mui/icons-material';
+import { ContentCut, Assignment, Star, Favorite, RecordVoiceOver, SupportAgent, Logout } from '@mui/icons-material';
+import { useRouter } from 'next/router';
 
 const pages = ['Categories'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -143,6 +144,12 @@ const NavbarAuth = () => {
 
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
+
+  const router = useRouter();
+  function logout(){
+    localStorage.removeItem('status');
+    router.push('/');
+  }
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -346,6 +353,12 @@ const NavbarAuth = () => {
                     <SupportAgent fontSize="small" />
                   </ListItemIcon>
                   <ListItemText>Bantuan Bengkelin Care</ListItemText>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <ListItemIcon>
+                    <Logout fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText onClick={logout}>Logout</ListItemText>
                 </MenuItem>
               </MenuList>
             </Menu>
