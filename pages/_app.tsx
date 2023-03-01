@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
         setAuthorized(true);
     }
   }
+
   return (
   <>
       <Head>

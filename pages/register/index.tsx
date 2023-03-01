@@ -25,6 +25,9 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import ReactPlayer from "react-player";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { userService } from '@/services/user.service';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Register(){
     const [showPassword, setShowPassword] = React.useState(false);
@@ -43,6 +46,32 @@ export default function Register(){
         </Typography>,
       ];
 
+    const router = useRouter();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [passwordConfirm, setPasswordConfirm] = useState('');
+    const [resError, setError] = useState('');
+
+    const submitData = async (e: React.SyntheticEvent) => {
+        e.preventDefault();
+        const user = {
+            name,
+            email,
+            password,
+            passwordConfirm
+        }
+        return userService.register(user)
+            .then((response) => {
+                if(response == 'success'){
+                    router.push('/');
+                }else{
+                    setError(response);
+                    router.push('/login');
+                }
+            })
+        .catch();
+    };
     return(
         <>
            <div>
@@ -96,6 +125,20 @@ export default function Register(){
                         > Masuk</Link>
                     </Grid>
                 </Grid>
+                <form onSubmit={submitData}>
+                <FormGroup>
+                    <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
+                    <InputLabel color="secondary">Name</InputLabel>
+                    <OutlinedInput
+                        type="text"
+                        label="Email"
+                        color="secondary"
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        required
+                    />
+                    </FormControl>
+                </FormGroup>
                 <FormGroup>
                     <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
                     <InputLabel color="secondary">Email</InputLabel>
@@ -103,6 +146,9 @@ export default function Register(){
                         type="text"
                         label="Email"
                         color="secondary"
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        required
                     />
                     </FormControl>
                 </FormGroup>
@@ -113,6 +159,35 @@ export default function Register(){
                         id="outlined-adornment-password"
                         type={showPassword ? 'text' : 'password'}
                         color="secondary"
+                        onChange={(e) => setPassword(e.target.value)}
+                        value={password}
+                        required
+                        endAdornment={
+                        <InputAdornment position="end">
+                            <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={handleClickShowPassword}
+                            onMouseDown={handleMouseDownPassword}
+                            edge="end"
+                            >
+                            {showPassword ? <VisibilityOff /> : <Visibility />}
+                            </IconButton>
+                        </InputAdornment>
+                        }
+                        label="Password"
+                    />
+                    </FormControl>
+                </FormGroup>
+                <FormGroup>
+                    <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
+                    <InputLabel htmlFor="outlined-adornment-password" color="secondary">Password Confirm</InputLabel>
+                    <OutlinedInput
+                        id="outlined-adornment-password"
+                        type={showPassword ? 'text' : 'password'}
+                        color="secondary"
+                        onChange={(e) => setPasswordConfirm(e.target.value)}
+                        value={passwordConfirm}
+                        required
                         endAdornment={
                         <InputAdornment position="end">
                             <IconButton
@@ -134,6 +209,7 @@ export default function Register(){
                         <button type="submit" className="bttn-pill bttn-sm bttn-royal">Daftar</button>
                     </FormControl>
                 </FormGroup>
+                </form>
         </Grid>
         <Grid item xs={6} sm={2}>
         </Grid>

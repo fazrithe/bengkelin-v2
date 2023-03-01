@@ -11,7 +11,8 @@ const userSubject = new BehaviorSubject(process.browser && JSON.parse(localStora
 export const userService = {
     user: userSubject.asObservable(),
     get userValue () { return userSubject.value},
-    login
+    login,
+    register
 }
 
 function login(Email, Password){
@@ -35,3 +36,16 @@ function login(Email, Password){
         return error;
     })
 }
+
+function register(user){
+    return fetchWrapper.post(`${baseUrl}/register`, user)
+    .then(response => {
+        return response.status;
+    })
+    .catch((error) => {
+        //assign error to state "validation"
+        // return "error";
+        return error;
+    })
+}
+
